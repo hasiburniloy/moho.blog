@@ -70,12 +70,21 @@
   
   "past_collaborators_mentors": [
     {
-      "name": "",
-      "designation": "",
-      "affiliation": "",
-      "duration": "",
-      "photo": "https://randomuser.me/api/portraits/women/45.jpg",
+      "name": "Dr. Abdullah Iqbal",
+      "designation": "Professor",
+      "affiliation": "FET, Bangladesh Agricultural University",
+      "duration": "Jan, 2019 - Feb, 2023",
+      "photo": "/imgs/people/iqbal.png",
+      "link": ""
+    },
+    {
+      "name": "Mrs. Maria Afroz Toma",
+      "designation": "Assistant Professor",
+      "affiliation": "FET, Bangladesh Agricultural University",
+      "duration": "Jan, 2019 - Feb, 2023",
+      "photo": "/imgs/people/toma.jpeg",
       "link": ""
     }
+
   ]
 }

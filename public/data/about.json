@@ -3,42 +3,44 @@
     {
       "position": "Graduate Research Assistant",
       "company": "Precision Agriculture Lab, Auburn University",
-      "duration": "May, 2024 - Present",
+      "duration": "Jan, 2023 - Present",
       "description": "",
       "logo": "/imgs/logo/au.jpg"
     },
     {
-      "position": "Analytics Engineer",
-      "company": "Intelligent Machines Limited",
-      "duration": "Apr, 2022 - Mar, 2024",
+      "position": "Undergraduate Research Assistant",
+      "company": "Bangladesh Agricultural University, Mymensingh - 2202, Bangladesh",
+      "duration": "Jan, 2022 - Apr, 2022",
       "description": "",
-      "logo": "/imgs/logo/im.png"
+      "logo": "/imgs/logo/bau.png"
     }
   ],
   "education": [
     {
-      "degree": "M.S. in Biosystems Engineering",
+      "degree": "Ph.D. in Biosystems Engineering",
       "institution": "Auburn University",
-      "year": "May, 2024 - Present",
+      "year": "Jan, 2025 - Present",
       "logo": "/imgs/logo/au.jpg"
     },
     {
-      "degree": "BSc. Engg. in Software Engineering",
-      "institution": "Islamic University of Technology",
-      "year": "Jan, 2019 - May, 2023",
-      "logo": "/imgs/logo/iut.png"
+      "degree": "M.S. in Biosystems Engineering",
+      "institution": "Auburn University",
+      "year": "Jan, 2023 - Dec, 2024",
+      "logo": "/imgs/logo/au.jpg"
+    },
+    {
+      "degree": "BSc.in Food Engineering",
+      "institution": "Bangladesh Agricultural University",
+      "year": "Jan, 2017 - Dec, 2021",
+      "logo": "/imgs/logo/bau.png"
     }
   ],
   "skills": {
     "Programming Languages": [
       { "name": "Python" },
-      { "name": "JavaScript" },
-      { "name": "TypeScript" },
-      { "name": "R" },
-      { "name": "Java" },
-      { "name": "Bash" },
-      { "name": "C/C++" },
-      { "name": "SQL" }
+      { "name": "MATLAB" },
+      { "name": "C"},
+      { "name": "R" }
     ],
     "Data Science & Machine Learning": [
       { "name": "NumPy" },
@@ -49,37 +51,20 @@
       { "name": "Tensorboard" },
       { "name": "Keras" },
       { "name": "OpenCV" },
-      { "name": "Textract" },
       { "name": "Scikit-learn" },
       { "name": "Tableau" },
-      { "name": "Google Big Query" },
       { "name": "Microsoft Power BI" }
     ],
-    "Web Technologies": [
-      { "name": "FastAPI" },
-      { "name": "Flask" },
-      { "name": "Django" },
-      { "name": "Selenium" },
-      { "name": "React" },
-      { "name": "Node" },
-      { "name": "Express" }
-    ],
     "Database": [
-      { "name": "MySQL" },
-      { "name": "MongoDB" },
-      { "name": "Firebase" },
-      { "name": "Oracle" }
+      { "name": "MySQL" }
     ],
     "Cloud Technologies": [
       { "name": "Azure" },
-      { "name": "AWS" },
-      { "name": "RabbitMQ" }
+      { "name": "AWS" }
     ],
     "DevOps & Version Control": [
       { "name": "Git" },
-      { "name": "GitHub" },
-      { "name": "Docker" },
-      { "name": "Kubernetes" }
+      { "name": "GitHub" }
     ],
     "Embedded Systems": [
       { "name": "Nvidia Jetson Modules" },
@@ -98,33 +83,33 @@
   },
   "certifications": [
     {
-      "title": "Data Analytics Professional Certificate",
-      "issuer": "Google",
-      "year": "2022",
-      "logo": "/imgs/logo/google.webp"
+      "title": "Tensorflow Developer Certificate",
+      "issuer": "Tensorflow",
+      "year": "2021",
+      "logo": "/imgs/logo/tensor.png"
     },
     {
-      "title": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
-      "issuer": "DeepLearning.AI",
-      "year": "2022",
-      "logo": "/imgs/logo/dlai.png"
-    },
-    {
-      "title": "Building Web Applications in Django",
-      "issuer": "University of Michigan",
-      "year": "2022",
-      "logo": "/imgs/logo/um.png"
-    },
-    {
-      "title": "Neural Networks and Deep Learning",
+      "title": "Tensorflow: Advanced Techniques",
       "issuer": "DeepLearning.AI",
       "year": "2021",
       "logo": "/imgs/logo/dlai.png"
+    },
+    {
+      "title": "Deep Learning Specialization ",
+      "issuer": "University of Michigan",
+      "year": "2020",
+      "logo": "/imgs/logo/um.png"
+    },
+    {
+      "title": "Machine Learning",
+      "issuer": "Standford | Online",
+      "year": "2020",
+      "logo": "/imgs/logo/standford.png"
     }
   ],
   "cv": {
-    "link": "/data/CV_Mohtasim_Hadi_Rafi.pdf",
-    "last_updated": "April 2025"
+    "link": "/data/Md_Hasibur_Rahman_CV.pdf",
+    "last_updated": "May 2025"
   },
   "professional_associations": [
     {
@@ -140,8 +125,8 @@
       "logo": "/imgs/logo/ahs.jpg"
     },
     {
-      "name": "Institute of Electrical and Electronics Engineers",
-      "logo": "/imgs/logo/ieee.jpg"
+      "name": "Alpha Epsilon Honor Society",
+      "logo": "/imgs/logo/alpha.gif"
     }
   ],
   "achievements": [
@@ -149,38 +134,40 @@
       "category": "Honors and Awards",
       "items": [
         {
+          "title": "Outstanding Master's Award",
+          "details": "Awarded for outstanding master's student from Auburn University",
+          "date": "Apr, 2025",
+          "image": "/imgs/logo/au.png",
+          "link": "https://graduate.auburn.edu/current-students/awards-and-grants/outstanding-graduate-student-awards/outstanding-masters-student-award-past-winners/"
+        },
+        {
           "title": "Harnessing Data Science and AI for Collaborative Advances Forum in Production Agriculture Forum",
           "details": "Winner of Poster Competition, AL, USA",
           "date": "Apr, 2025",
-          "image": "/imgs/logo/aaes.png",
-          "link": "https://aaes.auburn.edu/data-ai-forum/"
+          "image": "/imgs/logo/aua.png",
+          "link": "https://auburn.box.com/s/rhi76g0s1fatwhh1oop2o7bnz0dklslr"
         },
         {
-          "title": "FIRA USA Farm Robotics Challenge",
-          "details": "Excellency in Productivity (USD 5,000), CA, USA",
-          "date": "Oct, 2024",
-          "image": "/imgs/logo/fira.jpeg",
-          "link": "https://www.farmroboticschallenge.ai/2024"
+          "title": "International Conference Travel Grant",
+          "details": "Awarded for presenting my research in ASABE 2025, Canada",
+          "date": "Mar, 2025",
+          "image": "/imgs/logo/ag2pi.png",
+          "link": "https://agriculture.auburn.edu/about/faculty-staff-resources/international-conference-travel-support-request-form/"
         },
         {
-          "title": "European Rover Challenge",
-          "details": "10th in the world, Remote",
-          "date": "Sep, 2021",
-          "image": "/imgs/logo/erc.jpeg",
-          "link": "https://roverchallenge.eu/full-erc2021-scoreboard/"
-        },
+          "title": "Presidential Graduate Research Fellowship",
+          "details": "Awarded for outstanding incoming Ph.D. Student by the samuel ginn college of engineering",
+          "date": "Feb, 2024",
+          "image": "/imgs/logo/aue.png",
+          "link": "https://graduate.auburn.edu/au-presidential-graduate-research-fellowships/"
+        },      
         {
-          "title": "10th ICT Fest, IUT",
-          "details": "Second Runner’s up in Hackathon (BDT 10,000), Gazipur, Bangladesh",
-          "date": "Apr, 2019",
-          "image": "/imgs/logo/if.jpeg"
-        },
-        {
-          "title": "National High School Programming Contest",
-          "details": "Regional Winner, Mymensingh, Bangladesh",
-          "date": "Jun, 2016",
-          "image": "/imgs/logo/nhspc.jpeg"
-        }
+          "title": "Student Conference Travel Award, AG2PI",
+          "details": "Winner of Poster Competition, AL, USA",
+          "date": "May, 2024",
+          "image": "/imgs/logo/ag2pi.png",
+          "link": "https://maillist.cyverse.org/pipermail/nappn/attachments/20231208/9f3e2543/attachment-0001.pdf"
+        }      
       ]
     },
     {

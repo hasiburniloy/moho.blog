@@ -43,7 +43,7 @@ const ResearchProfiles = ({}) => {
         />
         <ProfileCard
           platform="ResearchGate"
-          url="/"
+          url="https://www.researchgate.net/profile/Md-Hasibur-Rahman-21?ev=hdr_xprf"
           logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg"
         />
       </div>
