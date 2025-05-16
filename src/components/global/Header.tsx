@@ -20,7 +20,7 @@ export default function Header() {
             className="text-3xl p-1 border-r-2 text-right leading-tight"
             style={{ fontFamily: "'Special Elite', cursive" }}
           >
-            Hasib's<br />Blog
+            Hasib&apos;s<br />Blog
           </span>
           <span className="text-sm">
             Md Hasibur

@@ -37,7 +37,7 @@ export default function Footer() {
               className="text-xl p-1 border-r-2 text-right leading-tight"
               style={{ fontFamily: "'Special Elite', cursive" }}
             >
-              Hasib's
+              Hasib&apos;s
               <br />
               Blog
             </span>
