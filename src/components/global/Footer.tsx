@@ -37,14 +37,14 @@ export default function Footer() {
               className="text-xl p-1 border-r-2 text-right leading-tight"
               style={{ fontFamily: "'Special Elite', cursive" }}
             >
-              The
+              Hasib's
               <br />
-              Moho Blog
+              Blog
             </span>
             <span className="text-xs">
               Journal of
               <br />
-              Mohtasim Hadi Rafi
+              Md Hasibur Rahman
             </span>
           </Link>
         </div>
@@ -66,21 +66,10 @@ export default function Footer() {
             <div>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/poetries" className="text-sm hover:text-gray-200">
-                    Poetries
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/typist"
-                    className="text-sm hover:text-gray-200"
-                  >
-                    The Typist
-                  </Link>
                 </li>
                 <li>
                   <Link href="/journals" className="text-sm hover:text-gray-200">
-                    Journals
+                    JOURNALS
                   </Link>
                 </li>
                 <li>
@@ -97,14 +86,6 @@ export default function Footer() {
                 <li>
                   <Link href="/projects" className="text-sm hover:text-gray-200">
                     Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/patents"
-                    className="text-sm hover:text-gray-200"
-                  >
-                    Patents
                   </Link>
                 </li>
                 <li>
@@ -157,7 +138,7 @@ export default function Footer() {
       {/* Single Column Layout */}
       <div className="text-center border-white border-t-1">
         <div className="flex justify-center space-x-4 mt-2">
-          <p className="text-sm">&copy; 2025 Mohtasim Hadi Rafi</p>
+          <p className="text-sm">&copy; 2025 Md Hasibur Rahman</p>
         </div>
       </div>
     </div>

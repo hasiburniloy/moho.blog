@@ -11,7 +11,6 @@ export default function HomePage() {
     const [hasMore, setHasMore] = useState(true)
     const [loading, setLoading] = useState(false)
 
-    const [patents, setPatents] = useState<ParsedPage[]>([])
     const [publications, setPublications] = useState<ParsedPage[]>([])
     const [presentations, setPresentations] = useState<ParsedPage[]>([])
     const [projects, setProjects] = useState<ParsedPage[]>([])
@@ -19,8 +18,6 @@ export default function HomePage() {
 
     const [articles, setArticles] = useState<ParsedPage[]>([])
     const [journals, setJournals] = useState<ParsedPage[]>([])
-    const [typists, setTypists] = useState<ParsedPage[]>([])
-    const [poetries, setPoetries] = useState<ParsedPage[]>([])
 
     const fetchPages = async (cursor: string | null = null) => {
         setLoading(true)
@@ -54,8 +51,6 @@ export default function HomePage() {
                                 or: [
                                     { property: 'Type', select: { equals: 'Article' } },
                                     { property: 'Type', select: { equals: 'Journal' } },
-                                    { property: 'Type', select: { equals: 'Typist' } },
-                                    { property: 'Type', select: { equals: 'Poetry' } }
                                 ]
                             },
                             { property: 'Featured', checkbox: { equals: true } }
@@ -68,7 +63,6 @@ export default function HomePage() {
             const newsPages: ParsedPage[] = newsRes.data.results
             const blogPages: ParsedPage[] = blogRes.data.results
 
-            setPatents(prev => [...prev, ...researchPages.filter(p => p.type === 'Patent')])
             setPublications(prev => [...prev, ...researchPages.filter(p => p.type === 'Publication')])
             setPresentations(prev => [...prev, ...researchPages.filter(p => p.type === 'Presentation')])
             setProjects(prev => [...prev, ...researchPages.filter(p => p.type === 'Project')])
@@ -76,8 +70,6 @@ export default function HomePage() {
 
             setArticles(prev => [...prev, ...blogPages.filter(p => p.type === 'Article')])
             setJournals(prev => [...prev, ...blogPages.filter(p => p.type === 'Journal')])
-            setTypists(prev => [...prev, ...blogPages.filter(p => p.type === 'Typist')])
-            setPoetries(prev => [...prev, ...blogPages.filter(p => p.type === 'Poetry')])
 
             setCursor(researchRes.data.next_cursor || newsRes.data.next_cursor || blogRes.data.next_cursor)
             setHasMore(researchRes.data.has_more || newsRes.data.has_more || blogRes.data.has_more)
@@ -94,15 +86,6 @@ export default function HomePage() {
     return (
         <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
             <div className="lg:col-span-2">
-                {/* Research: Patents */}
-                <section className="pb-8 border-b border-gray-300">
-                    <h2 className="text-xl font-semibold mb-2">Patents</h2>
-                    <div className="grid grid-cols-1 gap-4">
-                        {patents.map((page) => (
-                            <Card key={page.id} variant="normal" {...page} />
-                        ))}
-                    </div>
-                </section>
 
                 {/* Research: Projects + Publications */}
                 <section className="py-8 border-b border-gray-300 grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -148,12 +131,6 @@ export default function HomePage() {
                             <Card key={page.id} variant="normal" {...page} />
                         ))}
                     </div>
-                    <div className="flex flex-col gap-4 border-l border-gray-300 pl-4">
-                        <h2 className="text-xl font-semibold">Poetries</h2>
-                        {poetries.map((page) => (
-                            <Card key={page.id} variant="normal" {...page} />
-                        ))}
-                    </div>
                 </section>
             </div>
 
@@ -166,12 +143,6 @@ export default function HomePage() {
                     ))}
                 </section>
 
-                <section className="mt-8">
-                    <h2 className="text-xl font-semibold mb-2">Typists</h2>
-                    {typists.map((page) => (
-                        <Card key={page.id} variant="normal" {...page} />
-                    ))}
-                </section>
             </div>
 
             {hasMore && (

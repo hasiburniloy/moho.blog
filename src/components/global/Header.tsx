@@ -20,11 +20,11 @@ export default function Header() {
             className="text-3xl p-1 border-r-2 text-right leading-tight"
             style={{ fontFamily: "'Special Elite', cursive" }}
           >
-            The<br />Moho Blog
+            Hasib's<br />Blog
           </span>
           <span className="text-sm">
-            Mohtasim
-            <br />Hadi Rafi
+            Md Hasibur
+            <br />Rahman
           </span>
         </Link>
 
@@ -33,7 +33,6 @@ export default function Header() {
           <NavItem href="/" label="HOME" pathname={pathname} />
           <NavItem href="/blogs" label="BLOGS" pathname={pathname} />
           <NavItem href="/research" label="RESEARCH" pathname={pathname} />
-          <NavItem href="/books" label="BOOKS" pathname={pathname} />
           <NavItem href="/about" label="ABOUT" pathname={pathname} />
         </ul>
 
@@ -53,7 +52,6 @@ export default function Header() {
           <NavItem href="/" label="HOME" pathname={pathname} />
           <NavItem href="/blogs" label="BLOGS" pathname={pathname} />
           <NavItem href="/research" label="RESEARCH" pathname={pathname} />
-          <NavItem href="/books" label="BOOKS" pathname={pathname} />
           <NavItem href="/about" label="ABOUT" pathname={pathname} />
         </div>
       )}

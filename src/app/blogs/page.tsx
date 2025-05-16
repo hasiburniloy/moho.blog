@@ -11,8 +11,6 @@ export default function Blogs() {
     const [loading, setLoading] = useState(false)
     const [articles, setArticles] = useState<ParsedPage[]>([])
     const [journals, setJournals] = useState<ParsedPage[]>([])
-    const [typists, setTypists] = useState<ParsedPage[]>([])
-    const [poetries, setPoetries] = useState<ParsedPage[]>([])
 
     const fetchPages = async (cursor: string | null = null) => {
         setLoading(true)
@@ -25,8 +23,6 @@ export default function Blogs() {
                             or: [
                                 { property: 'Type', select: { equals: 'Article' } },
                                 { property: 'Type', select: { equals: 'Journal' } },
-                                { property: 'Type', select: { equals: 'Typist' } },
-                                { property: 'Type', select: { equals: 'Poetry' } }
                             ]
                         },
                         {
@@ -40,8 +36,6 @@ export default function Blogs() {
             const newPages: ParsedPage[] = res.data.results
             setArticles(prev => [...prev, ...newPages.filter(p => p.type === 'Article')])
             setJournals(prev => [...prev, ...newPages.filter(p => p.type === 'Journal')])
-            setTypists(prev => [...prev, ...newPages.filter(p => p.type === 'Typist')])
-            setPoetries(prev => [...prev, ...newPages.filter(p => p.type === 'Poetry')])
             setCursor(res.data.next_cursor)
             setHasMore(res.data.has_more)
         } catch (err) {
@@ -69,20 +63,8 @@ export default function Blogs() {
                             <Card key={page.id} variant="normal" {...page} />
                         ))}
                     </div>
-
-                    <div className="flex flex-col gap-4 border-l border-gray-300">
-                        {poetries.map((page) => (
-                            <Card key={page.id} variant="normal" {...page} />
-                        ))}
-                    </div>
                 </div>
 
-            </div>
-
-            <div className="flex flex-col gap-4 lg:border-l border-gray-300 lg:pl-6">
-                {typists.map((page) => (
-                    <Card key={page.id} variant="normal" {...page} />
-                ))}
             </div>
 
             {hasMore && (

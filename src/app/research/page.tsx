@@ -10,7 +10,6 @@ export default function Research() {
     const [cursor, setCursor] = useState<string | null>(null)
     const [hasMore, setHasMore] = useState(true)
     const [loading, setLoading] = useState(false)
-    const [patents, setPatents] = useState<ParsedPage[]>([])
     const [publications, setPublications] = useState<ParsedPage[]>([])
     const [presentations, setPresentations] = useState<ParsedPage[]>([])
     const [projects, setProjects] = useState<ParsedPage[]>([])
@@ -51,7 +50,6 @@ export default function Research() {
             const featuredPages: ParsedPage[] = featuredRes.data.results
             const newsPages: ParsedPage[] = newsRes.data.results
 
-            setPatents(prev => [...prev, ...featuredPages.filter(p => p.type === 'Patent')])
             setPublications(prev => [...prev, ...featuredPages.filter(p => p.type === 'Publication')])
             setPresentations(prev => [...prev, ...featuredPages.filter(p => p.type === 'Presentation')])
             setProjects(prev => [...prev, ...featuredPages.filter(p => p.type === 'Project')])
@@ -73,18 +71,12 @@ export default function Research() {
         <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 p-4">
             <div className="lg:col-span-2">
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-4 pb-8 border-b border-gray-300">
-                    {patents.map((page) => (
+                    {projects.map((page) => (
                         <Card key={page.id} variant="normal" {...page} />
                     ))}
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 border-b border-gray-300">
-                    <div className="flex flex-col gap-4 col-span-2">
-                        {projects.map((page) => (
-                            <Card key={page.id} variant="normal" {...page} />
-                        ))}
-                    </div>
-
                     <div className="flex flex-col gap-4 border-l border-gray-300">
                         {publications.map((page) => (
                             <Card key={page.id} variant="normal" {...page} />
