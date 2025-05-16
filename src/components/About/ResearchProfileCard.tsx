@@ -38,12 +38,12 @@ const ResearchProfiles = ({}) => {
       <div className="gap-6">
         <ProfileCard
           platform="Google Scholar"
-          url="https://scholar.google.com/citations?user=ih7NQy8AAAAJ&hl=en"
+          url="https://scholar.google.com/citations?user=KfXJWg0AAAAJ&hl=en"
           logo="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg"
         />
         <ProfileCard
           platform="ResearchGate"
-          url="https://www.researchgate.net/profile/Mohtasim-Rafi"
+          url="/"
           logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg"
         />
       </div>
