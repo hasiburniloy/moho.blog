@@ -5,8 +5,8 @@ import Footer from "@/components/global/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "the Moho Blog",
-  description: "Journal of Mohtasim Hadi Rafi",
+  title: "Hasib's Blog",
+  description: "Journal of Hasibur",
   icons: {
     icon: "/imgs/people/self.png",
   },
